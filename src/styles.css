@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #eee;
+  --btn-color: rgba(73, 30, 114, 0.582);
+  --font-color: #333;
+  --hover-color: rgba(73, 30, 114, 0.808);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font-color);
+}
+body {
+  background: var(--primary-color);
+}
+.container {
+  padding: 32px;
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form {
+  padding: 16px;
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+button {
+  padding: 16px;
+  margin: 4px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+input {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: var(--btn-color);
+  color: white;
+}
+
+input:focus {
+  border: 1px solid rgba(73, 30, 114, 0.582);
+}
+
+button:hover {
+  transition: 400ms;
+  background: var(--hover-color);
+}
+.github-user.none {
+  border: none;
+  padding: 16px;
+}
+
+.github-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.1);
+}
+
+.github-user img {
+  max-height: 270px;
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.github-user a {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+  transition: 400ms;
+}
+
+.github-user a:hover {
+  color: var(--hover-color);
+  opacity: 1;
+}
+
+.info {
+  border-top: 2px solid var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 8px;
+}
+
+.info p {
+  margin: 4px;
+  font-size: 12px;
+}
+
+.info p + p a {
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: normal;
+}
